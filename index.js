@@ -1,5 +1,6 @@
 import { json } from "body-parser";
 import express from "express";
+import { read } from "fs";
 
 import fs from "fs/promises";
 
@@ -31,6 +32,25 @@ app.get("/api/countries", async (req, res) => {
     success: true,
     count: countries.length,
     data: countries,
+  });
+});
+
+app.get("/api/countries/:id", async (req, res) => {
+  const countryId = req.params.id;
+  const countries = await readFile();
+
+  let findItem = countries.find((item) => item.code === countryId);
+
+  if (!findItem) {
+    return res.status(404).json({
+      success: false,
+      message: "Bunday malumot topilmadi",
+    });
+  }
+
+  res.status(200).json({
+    success: true,
+    data: findItem,
   });
 });
 
