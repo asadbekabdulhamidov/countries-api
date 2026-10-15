@@ -1,17 +1,24 @@
 import express from "express";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 
 import fs from "fs/promises";
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const countriesPath = path.join(__dirname, "data", "countries.json");
 
 const PORT = 3000;
 const app = express();
 
 const readFile = async () => {
   try {
-    const data = await fs.readFile("./data/countries.json", "utf-8");
+    const data = await fs.readFile(countriesPath, "utf-8");
 
     return JSON.parse(data);
   } catch (error) {
-    return [];
+    console.error("JSON faylni o‘qishda xato:", error);
+    throw error;
   }
 };
 
