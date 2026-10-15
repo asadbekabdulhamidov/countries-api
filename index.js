@@ -23,15 +23,15 @@ const writeFile = async (data) => {
   );
 };
 
-app.get("/api/countries", async (req, res) => {
-  const countries = await readFile();
+// app.get("/api/countries", async (req, res) => {
+//   const countries = await readFile();
 
-  res.status(200).json({
-    success: true,
-    count: countries.length,
-    data: countries,
-  });
-});
+//   res.status(200).json({
+//     success: true,
+//     count: countries.length,
+//     data: countries,
+//   });
+// });
 
 app.get("/api/countries/:code", async (req, res) => {
   const countryCode = req.params.code;
@@ -49,6 +49,33 @@ app.get("/api/countries/:code", async (req, res) => {
   res.status(200).json({
     success: true,
     data: findItem,
+  });
+});
+
+// qidiruv va filter
+
+app.get("/api/countries", async (req, res) => {
+  const countries = await readFile();
+  const { region } = req.query;
+
+  if (!region) {
+    return res.status(200).json({
+      success: true,
+      count: countries.length,
+      data: countries,
+    });
+  }
+
+  const filteredCountries = region
+    ? countries.filter(
+        (country) => country.region.toLowerCase() === region.toLowerCase(),
+      )
+    : countries;
+
+  res.status(200).json({
+    success: true,
+    count: filteredCountries.length,
+    data: filteredCountries,
   });
 });
 
