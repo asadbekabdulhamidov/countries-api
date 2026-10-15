@@ -1,6 +1,4 @@
-import { json } from "body-parser";
 import express from "express";
-import { read } from "fs";
 
 import fs from "fs/promises";
 
@@ -35,11 +33,11 @@ app.get("/api/countries", async (req, res) => {
   });
 });
 
-app.get("/api/countries/:id", async (req, res) => {
-  const countryId = req.params.id;
+app.get("/api/countries/:code", async (req, res) => {
+  const countryCode = req.params.code;
   const countries = await readFile();
 
-  let findItem = countries.find((item) => item.code === countryId);
+  let findItem = countries.find((item) => item.code === countryCode);
 
   if (!findItem) {
     return res.status(404).json({
