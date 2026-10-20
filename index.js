@@ -3,6 +3,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 import fs from "fs/promises";
+import { count } from "node:console";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -22,23 +23,38 @@ const readFile = async () => {
   }
 };
 
-const writeFile = async (data) => {
-  await fs.writeFile(
-    "./data/notes.json",
-    JSON.stringify(data, null, 2),
-    "utf-8",
-  );
-};
+// const writeFile = async (data) => {
+//   await fs.writeFile(
+//     "./data/notes.json",
+//     JSON.stringify(data, null, 2),
+//     "utf-8",
+//   );
+// };
 
-// app.get("/api/countries", async (req, res) => {
-//   const countries = await readFile();
+// qidiruv va filter
 
-//   res.status(200).json({
-//     success: true,
-//     count: countries.length,
-//     data: countries,
-//   });
-// });
+app.get("/api/countries", async (req, res) => {
+  const countries = await readFile();
+  const { region, search } = req.query;
+
+  const filteredCountries = countries.filter((country) => {
+    const matchesRegion = region
+      ? country.region.toLowerCase() === region.toLowerCase()
+      : true;
+
+    const matchesSearch = search
+      ? country.name.toLowerCase().includes(search.toLowerCase())
+      : true;
+
+    return matchesRegion && matchesSearch;
+  });
+
+  return res.status(200).json({
+    success: true,
+    count: filteredCountries.length,
+    data: filteredCountries,
+  });
+});
 
 app.get("/api/countries/:code", async (req, res) => {
   const countryCode = req.params.code;
@@ -56,33 +72,6 @@ app.get("/api/countries/:code", async (req, res) => {
   res.status(200).json({
     success: true,
     data: findItem,
-  });
-});
-
-// qidiruv va filter
-
-app.get("/api/countries", async (req, res) => {
-  const countries = await readFile();
-  const { region } = req.query;
-
-  if (!region) {
-    return res.status(200).json({
-      success: true,
-      count: countries.length,
-      data: countries,
-    });
-  }
-
-  const filteredCountries = region
-    ? countries.filter(
-        (country) => country.region.toLowerCase() === region.toLowerCase(),
-      )
-    : countries;
-
-  res.status(200).json({
-    success: true,
-    count: filteredCountries.length,
-    data: filteredCountries,
   });
 });
 
