@@ -1,32 +1,18 @@
 import express from "express";
 import cors from "cors";
-import path from "node:path";
-import { fileURLToPath } from "node:url";
-import fs from "fs/promises";
+import { createRequire } from "node:module";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const countriesPath = path.join(__dirname, "data", "countries.json");
+const require = createRequire(import.meta.url);
+const countries = require("./data/countries.json");
 
 const PORT = process.env.PORT || 3000;
 const app = express();
 
-// CORS - istalgan portdan (localhost:5173, localhost:3000 va boshqalar) so'rov yuborishga ruxsat
+// CORS - barcha portlardan so'rov yuborishga ruxsat berish
 app.use(cors());
 app.use(express.json());
 
-// JSON ma'lumotlarni o'qish funksiyasi
-const readFile = async () => {
-  try {
-    const data = await fs.readFile(countriesPath, "utf-8");
-    return JSON.parse(data);
-  } catch (error) {
-    console.error("JSON faylni o‘qishda xato:", error);
-    throw error;
-  }
-};
-
-// Bosh sahifa - o'quvchilar va test qilish uchun qo'llanma
+// Bosh sahifa - API holati va yo'riqnoma
 app.get("/", (req, res) => {
   res.status(200).json({
     message: "Countries API muvaffaqiyatli ishlamoqda! 🚀",
@@ -39,9 +25,8 @@ app.get("/", (req, res) => {
 });
 
 // Davlatlar ro'yxati, qidiruv va filter
-app.get("/api/countries", async (req, res) => {
+app.get("/api/countries", (req, res) => {
   try {
-    const countries = await readFile();
     const { region, search } = req.query;
 
     const filteredCountries = countries.filter((country) => {
@@ -77,10 +62,9 @@ app.get("/api/countries", async (req, res) => {
 });
 
 // Bitta davlat ma'lumotini olish (code, alpha3Code yoki name orqali)
-app.get("/api/countries/:code", async (req, res) => {
+app.get("/api/countries/:code", (req, res) => {
   try {
     const inputCode = req.params.code?.trim().toLowerCase();
-    const countries = await readFile();
 
     const findItem = countries.find(
       (item) =>
@@ -108,12 +92,12 @@ app.get("/api/countries/:code", async (req, res) => {
   }
 });
 
-// Faqat lokal kompyuterda ishga tushirilganda portni tinglaydi (Vercelda serverless ishlaydi)
+// Lokal kompyuterda ishga tushirish uchun port tinglash
 if (process.env.NODE_ENV !== "production" && !process.env.VERCEL) {
   app.listen(PORT, () => {
     console.log(`Server ishlamoqda: http://localhost:${PORT}`);
   });
 }
 
-// Vercel serverless deployment uchun eksport
+// Vercel serverless uchun eksport
 export default app;
