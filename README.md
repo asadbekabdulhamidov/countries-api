@@ -16,10 +16,11 @@ Ushbu API frontend darslarida **"Where in the world? (REST Countries)"** loyihas
 | № | Vazifasi | Method | Endpoint | Misol |
 |---|---|:---:|---|---|
 | **1** | Barcha davlatlar ro‘yxati | `GET` | `/api/countries` | `/api/countries` |
-| **2** | Nomi yoki kodi bo‘yicha qidirish | `GET` | `/api/countries?search={qiymat}` | `/api/countries?search=uz` |
-| **3** | Hudud (qit’a) bo‘yicha filtrlash | `GET` | `/api/countries?region={region}` | `/api/countries?region=europe` |
-| **4** | Qidiruv va Filterni birgalikda ishlatish | `GET` | `/api/countries?region={region}&search={qiymat}` | `/api/countries?region=asia&search=uz` |
-| **5** | Bitta davlat haqida batafsil ma’lumot | `GET` | `/api/countries/:code` | `/api/countries/uz` yoki `/api/countries/DEU` |
+| **2** | Nomi bo‘yicha qidirish (Query) | `GET` | `/api/countries?name={nomi}` yoki `?search={nomi}` | `/api/countries?name=germany` |
+| **3** | Nomi bo‘yicha qidirish (Path) | `GET` | `/api/countries/name/{nomi}` | `/api/countries/name/uzbekistan` |
+| **4** | Hudud (qit’a) bo‘yicha filtrlash | `GET` | `/api/countries?region={region}` | `/api/countries?region=europe` |
+| **5** | Qidiruv va Filterni birgalikda | `GET` | `/api/countries?region={region}&name={nomi}` | `/api/countries?region=asia&name=uz` |
+| **6** | Bitta davlat kodi bo‘yicha (Detail) | `GET` | `/api/countries/:code` | `/api/countries/uz` yoki `/api/countries/DEU` |
 
 ---
 
