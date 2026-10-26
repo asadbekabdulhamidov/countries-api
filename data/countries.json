@@ -1,6 +1,7 @@
 [
   {
     "code": "DE",
+    "alpha3Code": "DEU",
     "name": "Germany",
     "nativeName": "Deutschland",
     "flag": "https://flagcdn.com/w320/de.png",
@@ -9,7 +10,9 @@
     "subregion": "Western Europe",
     "population": 83240525,
     "area": 357022,
-    "languages": ["German"],
+    "languages": [
+      "German"
+    ],
     "currencies": [
       {
         "code": "EUR",
@@ -17,13 +20,26 @@
         "symbol": "€"
       }
     ],
-    "timezones": ["UTC+01:00"],
-    "borders": ["AUT", "BEL", "CZE", "DNK", "FRA", "LUX", "NLD", "POL", "CHE"],
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "borders": [
+      "AUT",
+      "BEL",
+      "CZE",
+      "DNK",
+      "FRA",
+      "LUX",
+      "NLD",
+      "POL",
+      "CHE"
+    ],
     "independent": true,
     "unMember": true
   },
   {
     "code": "US",
+    "alpha3Code": "USA",
     "name": "United States",
     "nativeName": "United States",
     "flag": "https://flagcdn.com/w320/us.png",
@@ -32,7 +48,9 @@
     "subregion": "North America",
     "population": 331893745,
     "area": 9833517,
-    "languages": ["English"],
+    "languages": [
+      "English"
+    ],
     "currencies": [
       {
         "code": "USD",
@@ -40,13 +58,19 @@
         "symbol": "$"
       }
     ],
-    "timezones": ["UTC-12:00 to UTC+12:00"],
-    "borders": ["CAN", "MEX"],
+    "timezones": [
+      "UTC-12:00 to UTC+12:00"
+    ],
+    "borders": [
+      "CAN",
+      "MEX"
+    ],
     "independent": true,
     "unMember": true
   },
   {
     "code": "BR",
+    "alpha3Code": "BRA",
     "name": "Brazil",
     "nativeName": "Brasil",
     "flag": "https://flagcdn.com/w320/br.png",
@@ -55,7 +79,9 @@
     "subregion": "South America",
     "population": 212559409,
     "area": 8515767,
-    "languages": ["Portuguese"],
+    "languages": [
+      "Portuguese"
+    ],
     "currencies": [
       {
         "code": "BRL",
@@ -63,7 +89,12 @@
         "symbol": "R$"
       }
     ],
-    "timezones": ["UTC-05:00", "UTC-04:00", "UTC-03:00", "UTC-02:00"],
+    "timezones": [
+      "UTC-05:00",
+      "UTC-04:00",
+      "UTC-03:00",
+      "UTC-02:00"
+    ],
     "borders": [
       "ARG",
       "BOL",
@@ -81,6 +112,7 @@
   },
   {
     "code": "IS",
+    "alpha3Code": "ISL",
     "name": "Iceland",
     "nativeName": "Ísland",
     "flag": "https://flagcdn.com/w320/is.png",
@@ -89,7 +121,9 @@
     "subregion": "Northern Europe",
     "population": 366425,
     "area": 103000,
-    "languages": ["Icelandic"],
+    "languages": [
+      "Icelandic"
+    ],
     "currencies": [
       {
         "code": "ISK",
@@ -97,13 +131,16 @@
         "symbol": "kr"
       }
     ],
-    "timezones": ["UTC"],
+    "timezones": [
+      "UTC"
+    ],
     "borders": [],
     "independent": true,
     "unMember": true
   },
   {
     "code": "AF",
+    "alpha3Code": "AFG",
     "name": "Afghanistan",
     "nativeName": "افغانستان",
     "flag": "https://flagcdn.com/w320/af.png",
@@ -112,7 +149,10 @@
     "subregion": "Southern Asia",
     "population": 40218234,
     "area": 652230,
-    "languages": ["Pashto", "Dari"],
+    "languages": [
+      "Pashto",
+      "Dari"
+    ],
     "currencies": [
       {
         "code": "AFN",
@@ -120,13 +160,23 @@
         "symbol": "؋"
       }
     ],
-    "timezones": ["UTC+04:30"],
-    "borders": ["IRN", "PAK", "TKM", "UZB", "TJK", "CHN"],
+    "timezones": [
+      "UTC+04:30"
+    ],
+    "borders": [
+      "IRN",
+      "PAK",
+      "TKM",
+      "UZB",
+      "TJK",
+      "CHN"
+    ],
     "independent": true,
     "unMember": false
   },
   {
     "code": "DZ",
+    "alpha3Code": "DZA",
     "name": "Algeria",
     "nativeName": "الجزائر",
     "flag": "https://flagcdn.com/w320/dz.png",
@@ -135,7 +185,10 @@
     "subregion": "Northern Africa",
     "population": 44700000,
     "area": 2381741,
-    "languages": ["Arabic", "Tamazight"],
+    "languages": [
+      "Arabic",
+      "Tamazight"
+    ],
     "currencies": [
       {
         "code": "DZD",
@@ -143,13 +196,24 @@
         "symbol": "د.ج"
       }
     ],
-    "timezones": ["UTC+01:00"],
-    "borders": ["TUN", "LBY", "NER", "ESH", "MRT", "MLI", "MAR"],
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "borders": [
+      "TUN",
+      "LBY",
+      "NER",
+      "ESH",
+      "MRT",
+      "MLI",
+      "MAR"
+    ],
     "independent": true,
     "unMember": true
   },
   {
     "code": "SE",
+    "alpha3Code": "SWE",
     "name": "Sweden",
     "nativeName": "Sverige",
     "flag": "https://flagcdn.com/w320/se.png",
@@ -158,7 +222,9 @@
     "subregion": "Northern Europe",
     "population": 10353442,
     "area": 450295,
-    "languages": ["Swedish"],
+    "languages": [
+      "Swedish"
+    ],
     "currencies": [
       {
         "code": "SEK",
@@ -166,13 +232,19 @@
         "symbol": "kr"
       }
     ],
-    "timezones": ["UTC+01:00"],
-    "borders": ["FIN", "NOR"],
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "borders": [
+      "FIN",
+      "NOR"
+    ],
     "independent": true,
     "unMember": true
   },
   {
     "code": "AL",
+    "alpha3Code": "ALB",
     "name": "Albania",
     "nativeName": "Shqipëria",
     "flag": "https://flagcdn.com/w320/al.png",
@@ -181,7 +253,9 @@
     "subregion": "Southern Europe",
     "population": 2837743,
     "area": 28748,
-    "languages": ["Albanian"],
+    "languages": [
+      "Albanian"
+    ],
     "currencies": [
       {
         "code": "ALL",
@@ -189,13 +263,21 @@
         "symbol": "L"
       }
     ],
-    "timezones": ["UTC+01:00"],
-    "borders": ["MNE", "GRC", "MKD", "UNK"],
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "borders": [
+      "MNE",
+      "GRC",
+      "MKD",
+      "UNK"
+    ],
     "independent": true,
     "unMember": true
   },
   {
     "code": "UZ",
+    "alpha3Code": "UZB",
     "name": "Uzbekistan",
     "nativeName": "Oʻzbekiston",
     "flag": "https://flagcdn.com/w320/uz.png",
@@ -204,7 +286,9 @@
     "subregion": "Central Asia",
     "population": 34232050,
     "area": 448978,
-    "languages": ["Uzbek"],
+    "languages": [
+      "Uzbek"
+    ],
     "currencies": [
       {
         "code": "UZS",
@@ -212,13 +296,22 @@
         "symbol": "soʻm"
       }
     ],
-    "timezones": ["UTC+05:00"],
-    "borders": ["AFG", "KAZ", "KGZ", "TJK", "TKM"],
+    "timezones": [
+      "UTC+05:00"
+    ],
+    "borders": [
+      "AFG",
+      "KAZ",
+      "KGZ",
+      "TJK",
+      "TKM"
+    ],
     "independent": true,
     "unMember": true
   },
   {
     "code": "BE",
+    "alpha3Code": "BEL",
     "name": "Belgium",
     "nativeName": "België / Belgique / Belgien",
     "flag": "https://flagcdn.com/w320/be.png",
@@ -227,7 +320,11 @@
     "subregion": "Western Europe",
     "population": 11555997,
     "area": 30528,
-    "languages": ["Dutch", "French", "German"],
+    "languages": [
+      "Dutch",
+      "French",
+      "German"
+    ],
     "currencies": [
       {
         "code": "EUR",
@@ -235,13 +332,21 @@
         "symbol": "€"
       }
     ],
-    "timezones": ["UTC+01:00"],
-    "borders": ["FRA", "DEU", "LUX", "NLD"],
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "borders": [
+      "FRA",
+      "DEU",
+      "LUX",
+      "NLD"
+    ],
     "independent": true,
     "unMember": true
   },
   {
     "code": "NG",
+    "alpha3Code": "NGA",
     "name": "Nigeria",
     "nativeName": "Nigeria",
     "flag": "https://flagcdn.com/w320/ng.png",
@@ -250,7 +355,9 @@
     "subregion": "Western Africa",
     "population": 206139587,
     "area": 923768,
-    "languages": ["English"],
+    "languages": [
+      "English"
+    ],
     "currencies": [
       {
         "code": "NGN",
@@ -258,13 +365,21 @@
         "symbol": "₦"
       }
     ],
-    "timezones": ["UTC+01:00"],
-    "borders": ["BEN", "CMR", "TCD", "NER"],
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "borders": [
+      "BEN",
+      "CMR",
+      "TCD",
+      "NER"
+    ],
     "independent": true,
     "unMember": true
   },
   {
     "code": "JP",
+    "alpha3Code": "JPN",
     "name": "Japan",
     "nativeName": "日本",
     "flag": "https://flagcdn.com/w320/jp.png",
@@ -273,7 +388,9 @@
     "subregion": "Eastern Asia",
     "population": 125836021,
     "area": 377930,
-    "languages": ["Japanese"],
+    "languages": [
+      "Japanese"
+    ],
     "currencies": [
       {
         "code": "JPY",
@@ -281,7 +398,952 @@
         "symbol": "¥"
       }
     ],
-    "timezones": ["UTC+09:00"],
+    "timezones": [
+      "UTC+09:00"
+    ],
+    "borders": [],
+    "independent": true,
+    "unMember": true
+  },
+  {
+    "code": "FR",
+    "alpha3Code": "FRA",
+    "name": "France",
+    "nativeName": "France",
+    "flag": "https://flagcdn.com/w320/fr.png",
+    "capital": "Paris",
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "population": 67391582,
+    "area": 551695,
+    "languages": [
+      "French"
+    ],
+    "currencies": [
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€"
+      }
+    ],
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "borders": [
+      "AND",
+      "BEL",
+      "DEU",
+      "ITA",
+      "LUX",
+      "MCO",
+      "ESP",
+      "CHE"
+    ],
+    "independent": true,
+    "unMember": true
+  },
+  {
+    "code": "GB",
+    "alpha3Code": "GBR",
+    "name": "United Kingdom",
+    "nativeName": "United Kingdom",
+    "flag": "https://flagcdn.com/w320/gb.png",
+    "capital": "London",
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "population": 67215293,
+    "area": 242900,
+    "languages": [
+      "English"
+    ],
+    "currencies": [
+      {
+        "code": "GBP",
+        "name": "British pound",
+        "symbol": "£"
+      }
+    ],
+    "timezones": [
+      "UTC+00:00"
+    ],
+    "borders": [
+      "IRL"
+    ],
+    "independent": true,
+    "unMember": true
+  },
+  {
+    "code": "IT",
+    "alpha3Code": "ITA",
+    "name": "Italy",
+    "nativeName": "Italia",
+    "flag": "https://flagcdn.com/w320/it.png",
+    "capital": "Rome",
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "population": 59554023,
+    "area": 301336,
+    "languages": [
+      "Italian"
+    ],
+    "currencies": [
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€"
+      }
+    ],
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "borders": [
+      "AUT",
+      "FRA",
+      "SMR",
+      "SVN",
+      "CHE",
+      "VAT"
+    ],
+    "independent": true,
+    "unMember": true
+  },
+  {
+    "code": "ES",
+    "alpha3Code": "ESP",
+    "name": "Spain",
+    "nativeName": "España",
+    "flag": "https://flagcdn.com/w320/es.png",
+    "capital": "Madrid",
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "population": 47351567,
+    "area": 505992,
+    "languages": [
+      "Spanish"
+    ],
+    "currencies": [
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€"
+      }
+    ],
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "borders": [
+      "AND",
+      "FRA",
+      "GIB",
+      "PRT",
+      "MAR"
+    ],
+    "independent": true,
+    "unMember": true
+  },
+  {
+    "code": "PT",
+    "alpha3Code": "PRT",
+    "name": "Portugal",
+    "nativeName": "Portugal",
+    "flag": "https://flagcdn.com/w320/pt.png",
+    "capital": "Lisbon",
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "population": 10305564,
+    "area": 92090,
+    "languages": [
+      "Portuguese"
+    ],
+    "currencies": [
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€"
+      }
+    ],
+    "timezones": [
+      "UTC+00:00"
+    ],
+    "borders": [
+      "ESP"
+    ],
+    "independent": true,
+    "unMember": true
+  },
+  {
+    "code": "NL",
+    "alpha3Code": "NLD",
+    "name": "Netherlands",
+    "nativeName": "Nederland",
+    "flag": "https://flagcdn.com/w320/nl.png",
+    "capital": "Amsterdam",
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "population": 17441139,
+    "area": 41850,
+    "languages": [
+      "Dutch"
+    ],
+    "currencies": [
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€"
+      }
+    ],
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "borders": [
+      "BEL",
+      "DEU"
+    ],
+    "independent": true,
+    "unMember": true
+  },
+  {
+    "code": "CH",
+    "alpha3Code": "CHE",
+    "name": "Switzerland",
+    "nativeName": "Schweiz",
+    "flag": "https://flagcdn.com/w320/ch.png",
+    "capital": "Bern",
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "population": 8654622,
+    "area": 41284,
+    "languages": [
+      "German",
+      "French",
+      "Italian",
+      "Romansh"
+    ],
+    "currencies": [
+      {
+        "code": "CHF",
+        "name": "Swiss franc",
+        "symbol": "CHF"
+      }
+    ],
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "borders": [
+      "AUT",
+      "FRA",
+      "ITA",
+      "LIE",
+      "DEU"
+    ],
+    "independent": true,
+    "unMember": true
+  },
+  {
+    "code": "NO",
+    "alpha3Code": "NOR",
+    "name": "Norway",
+    "nativeName": "Norge",
+    "flag": "https://flagcdn.com/w320/no.png",
+    "capital": "Oslo",
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "population": 5379475,
+    "area": 323802,
+    "languages": [
+      "Norwegian"
+    ],
+    "currencies": [
+      {
+        "code": "NOK",
+        "name": "Norwegian krone",
+        "symbol": "kr"
+      }
+    ],
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "borders": [
+      "FIN",
+      "SWE",
+      "RUS"
+    ],
+    "independent": true,
+    "unMember": true
+  },
+  {
+    "code": "PL",
+    "alpha3Code": "POL",
+    "name": "Poland",
+    "nativeName": "Polska",
+    "flag": "https://flagcdn.com/w320/pl.png",
+    "capital": "Warsaw",
+    "region": "Europe",
+    "subregion": "Central Europe",
+    "population": 37950802,
+    "area": 312696,
+    "languages": [
+      "Polish"
+    ],
+    "currencies": [
+      {
+        "code": "PLN",
+        "name": "Polish złoty",
+        "symbol": "zł"
+      }
+    ],
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "borders": [
+      "BLR",
+      "CZE",
+      "DEU",
+      "LTU",
+      "RUS",
+      "SVK",
+      "UKR"
+    ],
+    "independent": true,
+    "unMember": true
+  },
+  {
+    "code": "TR",
+    "alpha3Code": "TUR",
+    "name": "Turkey",
+    "nativeName": "Türkiye",
+    "flag": "https://flagcdn.com/w320/tr.png",
+    "capital": "Ankara",
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "population": 84680273,
+    "area": 783562,
+    "languages": [
+      "Turkish"
+    ],
+    "currencies": [
+      {
+        "code": "TRY",
+        "name": "Turkish lira",
+        "symbol": "₺"
+      }
+    ],
+    "timezones": [
+      "UTC+03:00"
+    ],
+    "borders": [
+      "ARM",
+      "AZE",
+      "BGR",
+      "GEO",
+      "GRC",
+      "IRN",
+      "IRQ",
+      "SYR"
+    ],
+    "independent": true,
+    "unMember": true
+  },
+  {
+    "code": "KZ",
+    "alpha3Code": "KAZ",
+    "name": "Kazakhstan",
+    "nativeName": "Qazaqstan",
+    "flag": "https://flagcdn.com/w320/kz.png",
+    "capital": "Astana",
+    "region": "Asia",
+    "subregion": "Central Asia",
+    "population": 18754440,
+    "area": 2724900,
+    "languages": [
+      "Kazakh",
+      "Russian"
+    ],
+    "currencies": [
+      {
+        "code": "KZT",
+        "name": "Kazakhstani tenge",
+        "symbol": "₸"
+      }
+    ],
+    "timezones": [
+      "UTC+05:00"
+    ],
+    "borders": [
+      "CHN",
+      "KGZ",
+      "RUS",
+      "TKM",
+      "UZB"
+    ],
+    "independent": true,
+    "unMember": true
+  },
+  {
+    "code": "KG",
+    "alpha3Code": "KGZ",
+    "name": "Kyrgyzstan",
+    "nativeName": "Kyrgyzstan",
+    "flag": "https://flagcdn.com/w320/kg.png",
+    "capital": "Bishkek",
+    "region": "Asia",
+    "subregion": "Central Asia",
+    "population": 6591600,
+    "area": 199951,
+    "languages": [
+      "Kyrgyz",
+      "Russian"
+    ],
+    "currencies": [
+      {
+        "code": "KGS",
+        "name": "Kyrgyzstani som",
+        "symbol": "с"
+      }
+    ],
+    "timezones": [
+      "UTC+06:00"
+    ],
+    "borders": [
+      "CHN",
+      "KAZ",
+      "TJK",
+      "UZB"
+    ],
+    "independent": true,
+    "unMember": true
+  },
+  {
+    "code": "TJ",
+    "alpha3Code": "TJK",
+    "name": "Tajikistan",
+    "nativeName": "Tojikiston",
+    "flag": "https://flagcdn.com/w320/tj.png",
+    "capital": "Dushanbe",
+    "region": "Asia",
+    "subregion": "Central Asia",
+    "population": 9537645,
+    "area": 143100,
+    "languages": [
+      "Tajik"
+    ],
+    "currencies": [
+      {
+        "code": "TJS",
+        "name": "Tajikistani somoni",
+        "symbol": "ЅМ"
+      }
+    ],
+    "timezones": [
+      "UTC+05:00"
+    ],
+    "borders": [
+      "AFG",
+      "CHN",
+      "KGZ",
+      "UZB"
+    ],
+    "independent": true,
+    "unMember": true
+  },
+  {
+    "code": "TM",
+    "alpha3Code": "TKM",
+    "name": "Turkmenistan",
+    "nativeName": "Türkmenistan",
+    "flag": "https://flagcdn.com/w320/tm.png",
+    "capital": "Ashgabat",
+    "region": "Asia",
+    "subregion": "Central Asia",
+    "population": 6031200,
+    "area": 488100,
+    "languages": [
+      "Turkmen"
+    ],
+    "currencies": [
+      {
+        "code": "TMT",
+        "name": "Turkmenistan manat",
+        "symbol": "m"
+      }
+    ],
+    "timezones": [
+      "UTC+05:00"
+    ],
+    "borders": [
+      "AFG",
+      "IRN",
+      "KAZ",
+      "UZB"
+    ],
+    "independent": true,
+    "unMember": true
+  },
+  {
+    "code": "CN",
+    "alpha3Code": "CHN",
+    "name": "China",
+    "nativeName": "Zhongguo",
+    "flag": "https://flagcdn.com/w320/cn.png",
+    "capital": "Beijing",
+    "region": "Asia",
+    "subregion": "Eastern Asia",
+    "population": 1402112000,
+    "area": 9640011,
+    "languages": [
+      "Chinese"
+    ],
+    "currencies": [
+      {
+        "code": "CNY",
+        "name": "Chinese yuan",
+        "symbol": "¥"
+      }
+    ],
+    "timezones": [
+      "UTC+08:00"
+    ],
+    "borders": [
+      "AFG",
+      "BTN",
+      "MMR",
+      "IND",
+      "KAZ",
+      "PRK",
+      "KGZ",
+      "LAO",
+      "MNG",
+      "NPL",
+      "PAK",
+      "RUS",
+      "TJK",
+      "VNM"
+    ],
+    "independent": true,
+    "unMember": true
+  },
+  {
+    "code": "IN",
+    "alpha3Code": "IND",
+    "name": "India",
+    "nativeName": "Bharat",
+    "flag": "https://flagcdn.com/w320/in.png",
+    "capital": "New Delhi",
+    "region": "Asia",
+    "subregion": "Southern Asia",
+    "population": 1380004385,
+    "area": 3287263,
+    "languages": [
+      "Hindi",
+      "English"
+    ],
+    "currencies": [
+      {
+        "code": "INR",
+        "name": "Indian rupee",
+        "symbol": "₹"
+      }
+    ],
+    "timezones": [
+      "UTC+05:30"
+    ],
+    "borders": [
+      "BGD",
+      "BTN",
+      "MMR",
+      "CHN",
+      "NPL",
+      "PAK"
+    ],
+    "independent": true,
+    "unMember": true
+  },
+  {
+    "code": "KR",
+    "alpha3Code": "KOR",
+    "name": "South Korea",
+    "nativeName": "Hanguk",
+    "flag": "https://flagcdn.com/w320/kr.png",
+    "capital": "Seoul",
+    "region": "Asia",
+    "subregion": "Eastern Asia",
+    "population": 51780579,
+    "area": 100210,
+    "languages": [
+      "Korean"
+    ],
+    "currencies": [
+      {
+        "code": "KRW",
+        "name": "South Korean won",
+        "symbol": "₩"
+      }
+    ],
+    "timezones": [
+      "UTC+09:00"
+    ],
+    "borders": [
+      "PRK"
+    ],
+    "independent": true,
+    "unMember": true
+  },
+  {
+    "code": "SA",
+    "alpha3Code": "SAU",
+    "name": "Saudi Arabia",
+    "nativeName": "Al-Arabiyyah as-Su'udiyyah",
+    "flag": "https://flagcdn.com/w320/sa.png",
+    "capital": "Riyadh",
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "population": 34813871,
+    "area": 2149690,
+    "languages": [
+      "Arabic"
+    ],
+    "currencies": [
+      {
+        "code": "SAR",
+        "name": "Saudi riyal",
+        "symbol": "﷼"
+      }
+    ],
+    "timezones": [
+      "UTC+03:00"
+    ],
+    "borders": [
+      "IRQ",
+      "JOR",
+      "KWT",
+      "OMN",
+      "QAT",
+      "ARE",
+      "YEM"
+    ],
+    "independent": true,
+    "unMember": true
+  },
+  {
+    "code": "AE",
+    "alpha3Code": "ARE",
+    "name": "United Arab Emirates",
+    "nativeName": "Al-Imarat al-Arabiyyah al-Muttahidah",
+    "flag": "https://flagcdn.com/w320/ae.png",
+    "capital": "Abu Dhabi",
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "population": 9890402,
+    "area": 83600,
+    "languages": [
+      "Arabic"
+    ],
+    "currencies": [
+      {
+        "code": "AED",
+        "name": "United Arab Emirates dirham",
+        "symbol": "د.إ"
+      }
+    ],
+    "timezones": [
+      "UTC+04:00"
+    ],
+    "borders": [
+      "OMN",
+      "SAU"
+    ],
+    "independent": true,
+    "unMember": true
+  },
+  {
+    "code": "CA",
+    "alpha3Code": "CAN",
+    "name": "Canada",
+    "nativeName": "Canada",
+    "flag": "https://flagcdn.com/w320/ca.png",
+    "capital": "Ottawa",
+    "region": "Americas",
+    "subregion": "North America",
+    "population": 38005238,
+    "area": 9984670,
+    "languages": [
+      "English",
+      "French"
+    ],
+    "currencies": [
+      {
+        "code": "CAD",
+        "name": "Canadian dollar",
+        "symbol": "$"
+      }
+    ],
+    "timezones": [
+      "UTC-08:00 to UTC-03:30"
+    ],
+    "borders": [
+      "USA"
+    ],
+    "independent": true,
+    "unMember": true
+  },
+  {
+    "code": "MX",
+    "alpha3Code": "MEX",
+    "name": "Mexico",
+    "nativeName": "México",
+    "flag": "https://flagcdn.com/w320/mx.png",
+    "capital": "Mexico City",
+    "region": "Americas",
+    "subregion": "North America",
+    "population": 128932753,
+    "area": 1964375,
+    "languages": [
+      "Spanish"
+    ],
+    "currencies": [
+      {
+        "code": "MXN",
+        "name": "Mexican peso",
+        "symbol": "$"
+      }
+    ],
+    "timezones": [
+      "UTC-08:00 to UTC-06:00"
+    ],
+    "borders": [
+      "BLZ",
+      "GTM",
+      "USA"
+    ],
+    "independent": true,
+    "unMember": true
+  },
+  {
+    "code": "AR",
+    "alpha3Code": "ARG",
+    "name": "Argentina",
+    "nativeName": "Argentina",
+    "flag": "https://flagcdn.com/w320/ar.png",
+    "capital": "Buenos Aires",
+    "region": "Americas",
+    "subregion": "South America",
+    "population": 45376763,
+    "area": 2780400,
+    "languages": [
+      "Spanish"
+    ],
+    "currencies": [
+      {
+        "code": "ARS",
+        "name": "Argentine peso",
+        "symbol": "$"
+      }
+    ],
+    "timezones": [
+      "UTC-03:00"
+    ],
+    "borders": [
+      "BOL",
+      "BRA",
+      "CHL",
+      "PRY",
+      "URY"
+    ],
+    "independent": true,
+    "unMember": true
+  },
+  {
+    "code": "EG",
+    "alpha3Code": "EGY",
+    "name": "Egypt",
+    "nativeName": "Misr",
+    "flag": "https://flagcdn.com/w320/eg.png",
+    "capital": "Cairo",
+    "region": "Africa",
+    "subregion": "Northern Africa",
+    "population": 102334404,
+    "area": 1002450,
+    "languages": [
+      "Arabic"
+    ],
+    "currencies": [
+      {
+        "code": "EGP",
+        "name": "Egyptian pound",
+        "symbol": "£"
+      }
+    ],
+    "timezones": [
+      "UTC+02:00"
+    ],
+    "borders": [
+      "ISR",
+      "LBY",
+      "PSE",
+      "SDN"
+    ],
+    "independent": true,
+    "unMember": true
+  },
+  {
+    "code": "ZA",
+    "alpha3Code": "ZAF",
+    "name": "South Africa",
+    "nativeName": "South Africa",
+    "flag": "https://flagcdn.com/w320/za.png",
+    "capital": "Pretoria",
+    "region": "Africa",
+    "subregion": "Southern Africa",
+    "population": 59308690,
+    "area": 1221037,
+    "languages": [
+      "Zulu",
+      "Xhosa",
+      "Afrikaans",
+      "English"
+    ],
+    "currencies": [
+      {
+        "code": "ZAR",
+        "name": "South African rand",
+        "symbol": "R"
+      }
+    ],
+    "timezones": [
+      "UTC+02:00"
+    ],
+    "borders": [
+      "BWA",
+      "LSO",
+      "MOZ",
+      "NAM",
+      "SWZ",
+      "ZWE"
+    ],
+    "independent": true,
+    "unMember": true
+  },
+  {
+    "code": "MA",
+    "alpha3Code": "MAR",
+    "name": "Morocco",
+    "nativeName": "Al-Maghrib",
+    "flag": "https://flagcdn.com/w320/ma.png",
+    "capital": "Rabat",
+    "region": "Africa",
+    "subregion": "Northern Africa",
+    "population": 36910560,
+    "area": 446550,
+    "languages": [
+      "Arabic",
+      "Berber"
+    ],
+    "currencies": [
+      {
+        "code": "MAD",
+        "name": "Moroccan dirham",
+        "symbol": "د.م."
+      }
+    ],
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "borders": [
+      "DZA",
+      "ESH",
+      "ESP"
+    ],
+    "independent": true,
+    "unMember": true
+  },
+  {
+    "code": "KE",
+    "alpha3Code": "KEN",
+    "name": "Kenya",
+    "nativeName": "Kenya",
+    "flag": "https://flagcdn.com/w320/ke.png",
+    "capital": "Nairobi",
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "population": 53771296,
+    "area": 580367,
+    "languages": [
+      "English",
+      "Swahili"
+    ],
+    "currencies": [
+      {
+        "code": "KES",
+        "name": "Kenyan shilling",
+        "symbol": "Sh"
+      }
+    ],
+    "timezones": [
+      "UTC+03:00"
+    ],
+    "borders": [
+      "ETH",
+      "SOM",
+      "SSD",
+      "TZA",
+      "UGA"
+    ],
+    "independent": true,
+    "unMember": true
+  },
+  {
+    "code": "AU",
+    "alpha3Code": "AUS",
+    "name": "Australia",
+    "nativeName": "Australia",
+    "flag": "https://flagcdn.com/w320/au.png",
+    "capital": "Canberra",
+    "region": "Oceania",
+    "subregion": "Australia and New Zealand",
+    "population": 25687041,
+    "area": 7692024,
+    "languages": [
+      "English"
+    ],
+    "currencies": [
+      {
+        "code": "AUD",
+        "name": "Australian dollar",
+        "symbol": "$"
+      }
+    ],
+    "timezones": [
+      "UTC+08:00 to UTC+10:30"
+    ],
+    "borders": [],
+    "independent": true,
+    "unMember": true
+  },
+  {
+    "code": "NZ",
+    "alpha3Code": "NZL",
+    "name": "New Zealand",
+    "nativeName": "Aotearoa",
+    "flag": "https://flagcdn.com/w320/nz.png",
+    "capital": "Wellington",
+    "region": "Oceania",
+    "subregion": "Australia and New Zealand",
+    "population": 5084300,
+    "area": 270467,
+    "languages": [
+      "English",
+      "Māori"
+    ],
+    "currencies": [
+      {
+        "code": "NZD",
+        "name": "New Zealand dollar",
+        "symbol": "$"
+      }
+    ],
+    "timezones": [
+      "UTC+12:00"
+    ],
     "borders": [],
     "independent": true,
     "unMember": true

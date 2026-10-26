@@ -26,22 +26,6 @@ const readFile = async () => {
   }
 };
 
-// 3 harfli alpha-3 kodlarni 2 harfli kodga bog'lash (border tugmalarini bosganda topishi uchun)
-const alpha3ToAlpha2 = {
-  deu: "de",
-  usa: "us",
-  bra: "br",
-  isl: "is",
-  afg: "af",
-  dza: "dz",
-  swe: "se",
-  alb: "al",
-  uzb: "uz",
-  bel: "be",
-  nga: "ng",
-  jpn: "jp",
-};
-
 // Bosh sahifa - o'quvchilar va test qilish uchun qo'llanma
 app.get("/", (req, res) => {
   res.status(200).json({
@@ -49,7 +33,7 @@ app.get("/", (req, res) => {
     endpoints: {
       all_countries: "/api/countries",
       search_and_filter: "/api/countries?search=uz&region=asia",
-      single_country: "/api/countries/:code (masalan: /api/countries/uz yoki /api/countries/DE)",
+      single_country: "/api/countries/:code (masalan: /api/countries/uz yoki /api/countries/DEU yoki /api/countries/France)",
     },
   });
 });
@@ -68,11 +52,12 @@ app.get("/api/countries", async (req, res) => {
         ? true
         : country.region.toLowerCase() === region.trim().toLowerCase();
 
-      // Qidiruv (davlat nomi yoki kodi bo'yicha)
+      // Qidiruv (davlat nomi, 2 harfli yoki 3 harfli kodi bo'yicha)
       const searchQuery = search ? search.trim().toLowerCase() : "";
       const matchesSearch = searchQuery
         ? country.name.toLowerCase().includes(searchQuery) ||
-          country.code.toLowerCase() === searchQuery
+          country.code.toLowerCase() === searchQuery ||
+          country.alpha3Code?.toLowerCase() === searchQuery
         : true;
 
       return matchesRegion && matchesSearch;
@@ -91,18 +76,16 @@ app.get("/api/countries", async (req, res) => {
   }
 });
 
-// Bitta davlat ma'lumotini olish
+// Bitta davlat ma'lumotini olish (code, alpha3Code yoki name orqali)
 app.get("/api/countries/:code", async (req, res) => {
   try {
     const inputCode = req.params.code?.trim().toLowerCase();
     const countries = await readFile();
 
-    // 3 harfli kod kiritilsa (masalan borderdan "UZB", "DEU"), uni 2 harfliga o'giramiz
-    const normalizedCode = alpha3ToAlpha2[inputCode] || inputCode;
-
     const findItem = countries.find(
       (item) =>
-        item.code.toLowerCase() === normalizedCode ||
+        item.code.toLowerCase() === inputCode ||
+        item.alpha3Code?.toLowerCase() === inputCode ||
         item.name.toLowerCase() === inputCode
     );
 
